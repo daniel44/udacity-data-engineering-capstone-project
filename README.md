@@ -42,11 +42,17 @@ Set forth below if a diagram of how the data flows:
 ###### Technology leveraged
 
 S3: AWS' proven object storage service. It was utilized to store the data asit can handle big datasets without storage concerns and it provides capabilities such as triggering functions, and versioning.
+
 Lambda - AWS serverless computing service. Used to create microservices that call the Glue data processes without the need of creating virtual machines.
+
 SQS - AWS Distributed queue service. Used to asynchronously manage a potential error in the data pipeline, storing the files that failed in the pipeline to enable future processing.
+
 SNS - AWS Notification service. Used to email the user when new data is ready to be analyzed
+
 Cloudwatch - AWS Metric and event repository. Used to trigger other services.
+
 Athena - AWS serverless interactive query service. Used to execute Data Quality processes and explore the data created without the need of creating databases.
+
 
 Please refer to the screenshots below for the services used:
 
