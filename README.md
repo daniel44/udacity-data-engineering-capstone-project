@@ -50,14 +50,40 @@ Athena - AWS serverless interactive query service. Used to execute Data Quality 
 
 Please refer to the screenshots below for the services used:
 
+S3 Raw Data Bucket and trigger
 ![sthreerawdata](/sthreerawdata.png)
+
+S3 Processed data bucket
 ![sthreeprocesseddata](/sthreeprocesseddata.png)
+
+Lambda function to call the crawler
 ![lambdacrawler](/lambdacrawler.png)
+
+Lamda function to call the ETL job
 ![lambdaetl](/lambdaetl.png)
+
+SQS queue
 ![sqs](/sqs.png)
+
+SNS notification
 ![sns](/sns.png)
+
+Cloudwatch alarm to fire the crawler
 ![cloudwatchlambda](/cloudwatchlambda.png)
+
+Cloudwatch alarm to send the notification
 ![cloudwatchsns](/cloudwatchsns.png)
+
+Glue crawler
+![gluecrawler](/gluecrawler.png)
+
+Glue schema inferred
+![glueschema](/glueschema.png)
+
+Glue ETL job
+![glueetl](/glueetl.png)
+
+Athena table
 ![athena](/athena.png)
 
 *Note that given the fact that the data lake exposes the data through parquet files hosted on S3. Such data can be queried using other services like AWS EMR, spark clusters with access to the bucket, among others.
