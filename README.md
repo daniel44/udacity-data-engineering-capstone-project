@@ -7,10 +7,43 @@ The project goal is to create a data lake that enables the final user to explore
 The data lake was designed with automation in mind. It includes automation processes for data cataloging with the end goal of enabling a self-service data lake, as well as automated ETL pipelines, which exposes the data in parquet files to allow faster queries. The following data dictionary explains the data model:
 
 ###### PPP Loans table
-1. XX
+
+1. loanamount (double)
+2. businessname (string)
+3. address (string)
+4. city (string)
+5. state (string)
+6. zip (bigint)
+7. naicscode (bigint)
+8. businesstype (string)
+9. raceethnicity (string)
+10. gender (string)
+12. veteran (string)
+13. nonprofit (string)
+14. jobsreported (bigint)
+15. dateapproved (string)
+16. lender (string)
+17. cd (string)
 
 ###### COVID-19 cases table
-1. XX
+1. province_state (string)
+2. country_region (string)
+3. last_update (string)
+4. lat (double)
+5. long_ (double)
+6. confirmed (double)
+7. deaths (double)
+8. recovered (double)
+9. active (double)
+10. fips (double)
+11. incident_rate (double)
+12. total_test_results (double)
+13. people_hospitalized (double)
+14. case_fatality_ratio (double)
+15. uid (double)
+16. iso3 (string)
+17. testing_rate (double)
+18. hospitalization_rate (double)
 
 The tables described above will capture the information collected (Please refer to secion Data pipeline for further details).
 
