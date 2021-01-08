@@ -106,18 +106,10 @@ The following queries were executed to validate data integrity:
 
 ![rowstablecovid](/rowstablecovid.png)
 
-#ZIP Codes in PPP loans not in COVID-19 cases
+States with the most COVID-19 cases
 
-![zipnotcovid](/zipnotcovid.png)
+![statesmostcases](/statesmostcases.png)
 
-#ZIP Codes in COVID-19 cases not in PPP loans
+States with the most PPP loans
 
-![zipnotPPP](/zipnotPPP.png)
-
-ZIP Codes with the most COVID-19 cases
-
-![zipmostcases](/zipmostcases.png)
-
-ZIP Codes with the most PPP loans
-
-![zipmostloans](/zipmostloans.png)
+![statesmostloans](/statesmostloans.png)
