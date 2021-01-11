@@ -3,7 +3,7 @@
 ##### Purpose and goals
 The project goal is to create a data lake that enables the final user to explore the PPP Loans and COVID-19 cases. This data lake can be used, for example, to identify if there is a relationship between the geographies that: (i) were most impacted by COVID-19 (based on number of cases); and (ii) had the most PPP loans approved. The data lake will be hosted in the cloud (AWS).
 
-##### Data model
+##### Data model & dictionary
 The data lake was designed with automation in mind. It includes automation processes for data cataloging with the end goal of enabling a self-service data lake, as well as automated ETL pipelines, which exposes the data in parquet files to allow faster queries. The following data dictionary explains the data model:
 
 ###### PPP Loans table
@@ -47,6 +47,9 @@ The data lake was designed with automation in mind. It includes automation proce
 
 The tables described above will capture the information collected (Please refer to secion Data pipeline for further details).
 
+##### Data model justification
+TODO
+
 ##### Data pipeline
 
 ###### Source data
@@ -72,7 +75,15 @@ Set forth below if a diagram of how the data flows:
 
 ![architecture](/architecture.png)
 
-###### Technology leveraged
+###### Steps taken
+TODO
+Step 1: Scope the Project and Gather Data
+Step 2: Explore and Assess the Data
+Step 3: Define the Data Model
+Step 4: Run ETL to Model the Data
+Step 5: Complete Project Write Up
+
+###### Technology justification
 
 S3: AWS' proven object storage service. It was utilized to store the data asit can handle big datasets without storage concerns and it provides capabilities such as triggering functions, and versioning.
 
@@ -127,7 +138,14 @@ Athena table
 
 *Note that given the fact that the data lake exposes the data through parquet files hosted on S3. Such data can be queried using other services like AWS EMR, spark clusters with access to the bucket, among others.
 
-##### Analysis and Data Quality results
+##### Workload scenarios
+
+TODO:
+When the data was increased by 100x, do you store the data in the same way? If your project is heavy on reading over writing, how do you store the data in a way to meet this requirement? What if the requirement is heavy on writing instead?
+How do you run this pipeline on a daily basis by 7 am every day. What if the dag fails, how do you update the dashboard? Will the dashboard still work? Or will you populate the dashboard by using the last day?
+How do you make your database could be accessed by 100+ people? Can you come up with a more cost-effective approach? Does your project need to support 100+ connections at the same time?
+
+##### Data Quality checks
 
 The following queries were executed to validate data integrity:
 
@@ -138,6 +156,11 @@ The following queries were executed to validate data integrity:
 #of rows in COVID-19 table
 
 ![rowstablecovid](/rowstablecovid.png)
+
+TODO:
+2 more Data quality checks
+
+##### Sample analyses
 
 States with the most COVID-19 cases
 
