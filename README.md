@@ -75,16 +75,9 @@ Set forth below if a diagram of how the data flows:
 
 ![architecture](/architecture.png)
 
-###### Steps taken
-TODO
-Step 1: Scope the Project and Gather Data
-Step 2: Explore and Assess the Data
-Step 3: Define the Data Model
-Step 4: Run ETL to Model the Data
-Step 5: Complete Project Write Up
-
 ###### Technology justification
 
+TODO
 S3: AWS' proven object storage service. It was utilized to store the data asit can handle big datasets without storage concerns and it provides capabilities such as triggering functions, and versioning.
 
 Lambda - AWS serverless computing service. Used to create microservices that call the Glue data processes without the need of creating virtual machines.
@@ -97,6 +90,14 @@ Cloudwatch - AWS Metric and event repository. Used to trigger other services.
 
 Athena - AWS serverless interactive query service. Used to execute Data Quality processes and explore the data created without the need of creating databases.
 
+
+###### Steps taken
+TODO
+Step 1: Scope the Project and Gather Data
+Step 2: Explore and Assess the Data
+Step 3: Define the Data Model
+Step 4: Run ETL to Model the Data
+Step 5: Complete Project Write Up
 
 Please refer to the screenshots below for the services used:
 
